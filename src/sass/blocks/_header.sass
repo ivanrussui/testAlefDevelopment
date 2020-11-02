@@ -1,0 +1,96 @@
+body
+	+reg
+
+.wrapper
+	max-width: 1280px
+	margin: 0 auto
+
+.header
+	margin: 0 auto
+	// background-color: rgba(31, 32, 33, 0.79)
+	background-image: url("../img/bg-img.jpg")
+	// &::before
+	// 	content: ''
+	// 	background-image: rgba(31, 32, 33, 0.79)
+	// 	margin: 0 auto
+	// 	max-width: 1280px
+	// background-blend-mode: darken
+	// background: url("../img/bg-img.jpg")  no-repeat 
+
+	// width: 100%
+	// это тож не обяз как я понял
+
+	// position: absolute
+	// background-repeat: no-repeat
+	// height: 252px
+	// left: 0px
+	// top: 0px
+	// &::before
+	// background: rgba(31, 32, 33, 0.79)
+
+	// fill: #1F2021 79%
+
+	// background: rgba(31, 32, 33, 0.79)
+	&__text
+		color: white
+		padding: 36px 0 66px
+		font-size: 38px
+		line-height: 46px
+		color: #FFFFFF
+		+bold
+	// &::after
+	// 	background: rgba(31, 32, 33, 0.79)
+
+.navbar
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 26px
+	&__menu
+		display: flex
+		font-size: 18px
+		line-height: 22px
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		padding-right: 130px
+	&__link
+		// display: flex
+		// justify-content: space-between
+		color: white
+		padding-left: 60px
+
+	&__logo
+		// padding: 26px 120px 36px 131px
+	&__number
+		font-size: 24px
+		line-height: 29px
+		color: #FFFFFF
+		+bold
+	&__text
+		font-size: 18px
+		line-height: 22px
+		text-align: right
+		color: #FFFFFF
+
+.container
+	margin: 0 130px
+
+.choice
+	display: flex
+	align-items: center
+	margin: 37px 0 38px
+	&__sort
+		font-size: 18px
+		line-height: 22px
+		+bold
+
+.price
+	&__text
+		padding: 0 14px 0 42px
+		font-size: 18px
+		line-height: 22px
+
+.age
+	&__text
+		padding: 0 24px 0 55px
+		font-size: 18px
+		line-height: 22px
