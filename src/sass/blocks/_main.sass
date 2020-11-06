@@ -23,8 +23,12 @@
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
-	// &__price:hover
-	// 	border: 1px solid $cardsbutton
+	&__price
+		margin-bottom: 23px
+		&:hover
+			border-color: $cardsbutton
+			// хз почему тут ховер не применяет а море применяет
+
 	&__text
 		background-color: $cardstext
 		padding: 0 29px 0 33px
@@ -39,7 +43,15 @@
 	&__description
 		display: flex
 		justify-content: space-between
+		padding-right: 33px
+		// padding-left: 0
 		// position: relative
+		&::before
+			content: ''
+			width: 4px
+			height: 26px
+			background-color: $cardsbutton
+
 	&__money
 		padding: 16px 0 29px
 		font-size: 24px
@@ -52,20 +64,13 @@
 		font-size: 16px
 		line-height: 20px
 		text-align: center
+		width: 380px
+		border-radius: 0 0 10px 10px
 		+bold
 
 	&__color
 		font-size: 12px
 		line-height: 15px
-		// position: relative
-		&::before
-			content: ''
-			position: absolute
-			width: 4px
-			height: 26px
-			background-color: $cardsbutton
-			// display: inline-block
-			margin-right: 18px
 
 	&__age, &__paws
 		&1
@@ -76,7 +81,6 @@
 			font-size: 12px
 			line-height: 15px
 
-
 	// &__paws
 	// 	// padding-right: 33px
 	// 	&1
@@ -86,3 +90,21 @@
 	// 	&2
 	// 		font-size: 12px
 	// 		line-height: 15px
+.more
+	display: flex
+	justify-content: center
+	&__button
+		font-size: 14px
+		line-height: 17px
+		text-align: center
+		width: 380px
+		padding: 24px 127px
+		background-color: #fff
+		border: 1px solid $morebutton
+		border-radius: 10px
+		margin: 45px 0 83px
+
+		&:hover
+			border-color: $cardsbutton
+			// text-decoration: underline
+			// как сделать подчеркивание цветом бордер калора?
