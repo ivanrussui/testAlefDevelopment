@@ -70,13 +70,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.container {
+  margin: 0 130px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -115,7 +119,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-right: 130px;
+  padding-right: 290px;
 }
 
 .navbar__link {
@@ -138,8 +142,8 @@ body {
   color: #FFFFFF;
 }
 
-.container {
-  margin: 0 130px;
+.main {
+  background-color: white;
 }
 
 .choice {
@@ -149,7 +153,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 37px 0 38px;
+  padding: 37px 0 38px;
 }
 
 .choice__sort {
@@ -169,4 +173,19 @@ body {
   padding: 0 24px 0 55px;
   font-size: 18px;
   line-height: 22px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards__text {
+  background-color: #F3F3F3;
 }
