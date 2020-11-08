@@ -262,9 +262,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 68px;
+  margin-bottom: 49px;
 }
 
 .more__button {
@@ -276,9 +275,14 @@ body {
   background-color: #fff;
   border: 1px solid #CACACA;
   border-radius: 10px;
-  margin: 45px 0 83px;
 }
 
 .more__button:hover {
   border-color: #6EBBD3;
+}
+
+.more__up {
+  width: 59px;
+  height: 59px;
+  background-color: #6EBBD3;
 }
