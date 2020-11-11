@@ -70,10 +70,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.container {
-  margin: 0 130px;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -82,6 +78,10 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.container {
+  margin: 0 130px;
 }
 
 .header {
@@ -256,6 +256,23 @@ body {
 .cards__age2, .cards__paws2 {
   font-size: 12px;
   line-height: 15px;
+}
+
+.cards__image1 {
+  z-index: 1;
+  position: relative;
+}
+
+.cards__image2 {
+  z-index: 2;
+  position: absolute;
+  padding: 34px 0 0 38px;
+}
+
+.cards__image3 {
+  z-index: 2;
+  position: absolute;
+  padding: 34px 0 0 302px;
 }
 
 .more {
