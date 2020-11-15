@@ -2,6 +2,7 @@
 	background-color: $footer
 	color: #fff
 	display: flex
+	justify-content: space-between
 	// margin-bottom: 114px
 	&__text
 		margin: 83px 87px 92px 80px
@@ -54,3 +55,45 @@
 		line-height: 17px
 		+bold
 	// 	margin-left: 18px
+
+@media (max-width: 1440px)
+	.footer
+		&__title
+			font-size: 43px
+		&__description
+			font-size: 23px
+		&__email
+			min-width: 220px
+
+		&__subscribe
+			padding: 24px 45px
+	// 	&__subscription
+	// 		font-size: 12px
+	// 		// line-height: 7px
+
+@media (max-width: 1280px)
+	.footer
+		&__title
+			font-size: 33px
+		&__description
+			font-size: 21px
+		// &__form
+		// 	display: flex
+		// 	flex-wrap: wrap
+		&__news
+			margin-bottom: 0
+			margin-top: 60px
+			margin-right: 40px
+		&__text
+			margin-right: 0
+			margin-top: 60px
+			margin-left: 40px
+		&__email
+			min-width: 0
+			// padding-top: 19px
+			// padding-bottom: 19px
+		&__subscription
+			font-size: 12px
+		&__subscribe
+			padding-left: 40px
+			padding-right: 40px

@@ -142,6 +142,28 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 1310px) {
+  .navbar__menu {
+    font-size: 16px;
+    padding-right: 240px;
+  }
+  .navbar__number {
+    font-size: 21px;
+  }
+  .navbar__text {
+    font-size: 15px;
+  }
+  .header__text {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar__menu {
+    padding-right: 60px;
+  }
+}
+
 .choice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,12 +322,26 @@ body {
   border-color: #6EBBD3;
 }
 
+@media (max-width: 1420px) {
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cards__price {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
 .footer {
   background-color: #1F2021;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__text {
@@ -379,6 +415,50 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 1440px) {
+  .footer__title {
+    font-size: 43px;
+  }
+  .footer__description {
+    font-size: 23px;
+  }
+  .footer__email {
+    min-width: 220px;
+  }
+  .footer__subscribe {
+    padding: 24px 45px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__title {
+    font-size: 33px;
+  }
+  .footer__description {
+    font-size: 21px;
+  }
+  .footer__news {
+    margin-bottom: 0;
+    margin-top: 60px;
+    margin-right: 40px;
+  }
+  .footer__text {
+    margin-right: 0;
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  .footer__email {
+    min-width: 0;
+  }
+  .footer__subscription {
+    font-size: 12px;
+  }
+  .footer__subscribe {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 #arrow {
   display: inline-block;
   background-color: #6EBBD3;
@@ -389,7 +469,7 @@ body {
   margin: 30px;
   position: fixed;
   bottom: 30px;
-  right: 225px;
+  right: 30px;
   -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
