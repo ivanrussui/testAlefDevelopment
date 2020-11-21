@@ -107,7 +107,7 @@ body {
 
 .header::after {
   content: '';
-  background: rgba(31, 32, 33, 0.79);
+  background: rgba(31, 32, 33, 0.49);
   position: absolute;
   z-index: 3;
   top: 0;
@@ -205,6 +205,12 @@ body {
   .navbar__link {
     padding-left: 0;
     padding-right: 35px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    background-position: 30%;
   }
 }
 
