@@ -98,7 +98,22 @@ body {
 
 .header {
   margin: 0 auto;
-  background-image: url("../img/bg-img.jpg");
+  background: url("../img/bg-img.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  background-position: 40% 60%;
+}
+
+.header::after {
+  content: '';
+  background: rgba(31, 32, 33, 0.79);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1px;
 }
 
 .header__text {
@@ -572,4 +587,11 @@ body {
 #arrow.show {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 760px) {
+  #arrow {
+    margin: 0;
+    right: 0;
+  }
 }
