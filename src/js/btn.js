@@ -1,4 +1,4 @@
-window.document.getElementsByClassName('.cards__button').function () {
+document.getElementsByClassName('.cards__button').function () {
 
 	const btn = document('.cards__button');
 
