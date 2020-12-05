@@ -12,6 +12,8 @@
 		padding: 0 14px 0 42px
 		font-size: 18px
 		line-height: 22px
+	&__down
+		vertical-align: middle
 
 .age
 	&__text
@@ -96,7 +98,6 @@
 		// margin-right: 264px
 		// padding-right: 264px
 
-
 	// &__paws
 	// 	// padding-right: 33px
 	// 	&1
@@ -158,7 +159,7 @@
 @media (max-width: 1420px)
 	.cards__price:nth-child(6), .cards__price:nth-child(5)
 		display: none
-	
+
 @media (max-width: 840px)
 	.cards__price:nth-child(4)
 		display: none
@@ -167,6 +168,20 @@
 		margin-right: 0
 		// width: 300px
 
+@media (max-width: 480px)
+	// choice
+	// 	display: flex
+	// 	flex-wrap: wrap
+	.choice__sort
+		font-size: 15px
+	.price__text
+		padding-right: 3px
+		padding-left: 13px
+		font-size: 15px
+	.age__text
+		padding-left: 13px
+		padding-right: 3px
+		font-size: 15px
 @media (max-width: 390px)
 	.cards
 		&__image1

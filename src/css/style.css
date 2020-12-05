@@ -294,6 +294,10 @@ body {
   line-height: 22px;
 }
 
+.price__down {
+  vertical-align: middle;
+}
+
 .age__text {
   padding: 0 24px 0 55px;
   font-size: 18px;
@@ -453,6 +457,22 @@ body {
   .cards__price {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .choice__sort {
+    font-size: 15px;
+  }
+  .price__text {
+    padding-right: 3px;
+    padding-left: 13px;
+    font-size: 15px;
+  }
+  .age__text {
+    padding-left: 13px;
+    padding-right: 3px;
+    font-size: 15px;
   }
 }
 
