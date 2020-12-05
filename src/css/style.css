@@ -450,6 +450,27 @@ body {
   .cards__price:nth-child(4) {
     display: none;
   }
+  .cards__price {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .cards__image1 {
+    max-width: 318px;
+  }
+  .cards__image3 {
+    padding-left: 240px;
+  }
+  .cards__button {
+    max-width: 318px;
+  }
+  .more__button {
+    max-width: 318px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .footer {
