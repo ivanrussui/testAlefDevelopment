@@ -54,6 +54,9 @@
 
 	// background: rgba(31, 32, 33, 0.79)
 	&__text
+		// z-index: 66
+		z-index: 11
+		position: relative
 		color: white
 		padding: 36px 0 66px
 		font-size: 38px
@@ -69,6 +72,7 @@
 	align-items: center
 	padding-top: 26px
 	&__menu
+		z-index: 11
 		display: flex
 		font-size: 18px
 		line-height: 22px
@@ -79,19 +83,25 @@
 		// justify-content: space-between
 		color: white
 		padding-left: 60px
-	// &__logo
+	&__logo
+		z-index: 11
 	// 	max-width: 100%
 	// 	display: block
 	// &__image
+	// 	z-index: 11
 	// 	max-width: 100%
 	// 	display: block
 		// padding: 26px 120px 36px 131px
 	&__number
+		z-index: 11
+		position: relative
 		font-size: 24px
 		line-height: 29px
 		color: #FFFFFF
 		+bold
 	&__text
+		z-index: 11
+		position: relative
 		font-size: 18px
 		line-height: 22px
 		text-align: right
@@ -178,10 +188,13 @@
 			margin-bottom: 20px
 			margin-top: 15px
 			font-size: 20px
+		&__logo
+			position: relative
+			z-index: 12
 		&__image
 			position: relative
 			left: 30px
-			z-index: 3
+			z-index: 11
 			// flex: 0 0 20px
 			width: 55px
 			height: 55px
@@ -191,7 +204,7 @@
 			position: relative
 			width: 50px
 			height: 25px
-			z-index: 3
+			z-index: 11
 		&__burger span
 			top: 10px
 			left: 5px
@@ -220,7 +233,7 @@
 			bottom: 10.5px
 		&__burger.active span
 			transform: scale(0)
-	.header
-		&::after
-			display: none
-			visibility: hidden
+	// .header
+	// 	&::after
+	// 		display: none
+	// 		visibility: hidden

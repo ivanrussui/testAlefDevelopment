@@ -123,6 +123,8 @@ body {
 }
 
 .header__text {
+  z-index: 11;
+  position: relative;
   color: white;
   padding: 36px 0 66px;
   font-size: 38px;
@@ -146,6 +148,7 @@ body {
 }
 
 .navbar__menu {
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +163,13 @@ body {
   padding-left: 60px;
 }
 
+.navbar__logo {
+  z-index: 11;
+}
+
 .navbar__number {
+  z-index: 11;
+  position: relative;
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
@@ -169,6 +178,8 @@ body {
 }
 
 .navbar__text {
+  z-index: 11;
+  position: relative;
   font-size: 18px;
   line-height: 22px;
   text-align: right;
@@ -256,10 +267,14 @@ body {
     margin-top: 15px;
     font-size: 20px;
   }
+  .navbar__logo {
+    position: relative;
+    z-index: 12;
+  }
   .navbar__image {
     position: relative;
     left: 30px;
-    z-index: 3;
+    z-index: 11;
     width: 55px;
     height: 55px;
   }
@@ -269,7 +284,7 @@ body {
     position: relative;
     width: 50px;
     height: 25px;
-    z-index: 3;
+    z-index: 11;
   }
   .navbar__burger span {
     top: 10px;
@@ -310,10 +325,6 @@ body {
   .navbar__burger.active span {
     -webkit-transform: scale(0);
             transform: scale(0);
-  }
-  .header::after {
-    display: none;
-    visibility: hidden;
   }
 }
 
