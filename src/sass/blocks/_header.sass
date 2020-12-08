@@ -4,7 +4,7 @@
 	background: url("../img/bg-img.jpg")
 	background-repeat: no-repeat
 	position: relative
-	z-index: 22
+	z-index: 5
 	background-position: 40% 60%
 	&::after
 		content: ''
@@ -16,6 +16,7 @@
 		left: 0
 		right: 0
 		bottom: 1px
+
 	// &::before
 	// 	content: ''
 	// 	background: #1F2021
@@ -78,8 +79,12 @@
 		// justify-content: space-between
 		color: white
 		padding-left: 60px
-
-	&__logo
+	// &__logo
+	// 	max-width: 100%
+	// 	display: block
+	// &__image
+	// 	max-width: 100%
+	// 	display: block
 		// padding: 26px 120px 36px 131px
 	&__number
 		font-size: 24px
@@ -130,7 +135,7 @@
 
 @media (max-width: 760px)
 	.header
-			background-position: 30%
+		background-position: 30%
 // 	.navbar
 // 		position: fixed
 // 		left: 0
@@ -154,10 +159,32 @@
 @media (max-width: 450px)
 	.navbar
 		&__menu
-			display: none
+			position: fixed
+			top: -100%
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: black
+			padding-top: 100px
+			padding-left: 30px
+			display: block
+			// margin-bottom: 20px
+			// z-index: 4
+			&.active
+				top: 0
+				transition: all 0.3s ease 0s
+		&__link
+			display: block
+			margin-bottom: 20px
+			margin-top: 15px
+			font-size: 20px
 		&__image
 			position: relative
 			left: 30px
+			z-index: 3
+			// flex: 0 0 20px
+			width: 55px
+			height: 55px
 		&__burger
 			right: 30px
 			display: block
@@ -185,6 +212,15 @@
 			bottom: 0
 		&__burger::before
 			top: 0
-	// .header
-	// 	&::after
-	// 		visibility: hidden
+		&__burger.active::before
+			transform: rotate(45deg)
+			top: 10.5px
+		&__burger.active::after
+			transform: rotate(-45deg)
+			bottom: 10.5px
+		&__burger.active span
+			transform: scale(0)
+	.header
+		&::after
+			display: none
+			visibility: hidden
